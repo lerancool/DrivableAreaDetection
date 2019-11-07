@@ -1,0 +1,11 @@
+#1 All datasets will be placed in datasets folder
+#2 Model weights files generated during training will be in logs folder
+#3 Model implementation files are placed in mrcnn folder
+
+
+#4 Go to samples/bdd, run below cmd to train the model with coco weights pre-trained
+Python3 bdd_train.py train --dataset=../../datasets/bdd --weights=coco
+
+#5 go to samples/bdd, run below cmd to detect the drivable area, and please make sure there is one image at least in datasets/bdd/test folder before running the cmd
+Python3 bdd_prediction.py
+
